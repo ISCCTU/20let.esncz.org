@@ -3,7 +3,6 @@
       flex flex-row justify-center sticky top-0 bg-white
       border-primary border-b-4 border-opacity-70
       font-bold text-sm md:text-lg uppercase text-primary font-esn
-      dark:bg-primary dark:text-white
       z-[1111] select-none
     ">
     <ul>

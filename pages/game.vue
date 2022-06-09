@@ -6,7 +6,7 @@
         prose prose-lg dark:prose-invert mx-auto
         prose-a:text-secondary prose-p:text-justify
       ">
-      <h3 class="text-center">Are you getting bored between the plenaries? No way!</h3>
+      <h3 class="text-center text-primary">Are you getting bored between the plenaries? No way!</h3>
 
       <p class="text-center">We prepared for you NA Brno Game which will make your NA more fun, and you will have the
         opportunity to meet
