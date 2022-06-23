@@ -41,8 +41,12 @@ jobs:
       - name: Render website
         run: yarn generate
 
-      - name: Deploy to GH Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to server
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
-          publish_dir: ./dist
+          server: ${{ secrets.SERVER }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: ./
+          dangerous-clean-slate: true
