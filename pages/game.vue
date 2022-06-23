@@ -1,9 +1,9 @@
 <template>
   <article>
-    <h1 class="text-center text-3xl md:text-6xl text-primary my-4 font-bold dark:text-white">The Game</h1>
+    <h1 class="text-center text-3xl md:text-6xl text-primary my-4 font-bold">The Game</h1>
 
     <div class="
-        prose prose-lg dark:prose-invert mx-auto
+        prose prose-lg  mx-auto
         prose-a:text-secondary prose-p:text-justify
       ">
       <h3 class="text-center text-primary">Are you getting bored between the plenaries? No way!</h3>

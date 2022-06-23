@@ -1,20 +1,20 @@
 <template>
   <article class="
       flex-grow flex flex-row items-stretch justify-between
-      bg-gray-200 dark:bg-gray-800 relative
+      bg-gray-200  relative
     ">
     <FancyLine
       class="w-8 border-b-0 bg-repeat-y h-auto"
       :class="{'h-8': false}"
-      style="background-size: 70% auto;"
-      :style="{backgroundImage: `url(${require('~/assets/svg/line1-vertical.svg')})`}"
+      style="background-size: 2500% auto;"
+      :style="{backgroundImage: `url(${require('~/assets/img/4.png')})`}"
     />
     <client-only>
       <l-map
         @hook:mounted="mapInitialization"
         :zoom=14 :min-zoom=7
         :max-bounds="[[51.2, 12], [48.5, 19]]"
-        :center="[49.1996122, 16.59]"
+        :center="[50.0881396430446, 14.428520596227498]"
         ref="map"
         class="h-auto-important"
       >
@@ -44,7 +44,7 @@
               :icon-url="require('../assets/svg/marker.svg')"
               :iconAnchor="[24/1.5, 64/1.5]"
               :iconSize="[48/1.5, 64/1.5]"
-              class-name="black-to-primary dark:black-to-secondary"
+              class-name="black-to-primary"
             />
             <l-tooltip :options="{
               permanent: true,
@@ -64,8 +64,8 @@
     <FancyLine
       class="w-8 border-b-0 bg-repeat-y h-auto"
       :class="{'h-8': false}"
-      style="background-size: 70% auto;"
-      :style="{backgroundImage: `url(${require('~/assets/svg/line1-vertical.svg')})`}"
+      style="background-size: 2500% auto;"
+      :style="{backgroundImage: `url(${require('~/assets/img/4.png')})`}"
     />
     <transition name="fade">
       <MapPlaceDetail
@@ -202,9 +202,9 @@ export default {
 
 .leaflet-tooltip {
   @apply text-base p-2 border-4 border-primary bg-white
-  hover:border-secondary
+  hover:border-secondary;
 
-  dark:bg-gray-800 dark:text-white dark:font-medium;
+
 }
 </style>
 

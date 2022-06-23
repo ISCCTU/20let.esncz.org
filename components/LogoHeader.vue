@@ -6,12 +6,14 @@
       v-if="$route.path === '/'"
       class="
         transition-opacity
-        min-h-[23vh] md:min-h-[50vh] lg:min-h-[70vh]
+        min-h-[20vh] md:min-h-[30vh] lg:min-h-[40vh]
 
-        origin-bottom select-none bg-logo bg-contain bg-no-repeat bg-center
+        origin-bottom select-none bg-primary
         flex flex-row justify-center items-center
-        my-4 md:my-8 mx-4
       ">
+      <h1>
+        <img src="../assets/svg/esncz20-logo.svg" alt="#ESNCZ20 logo" class="bg-white min-h-[20vh] md:min-h-[30vh] lg:min-h-[40vh]" />
+      </h1>
     </header>
   </Transition>
 </template>

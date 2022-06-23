@@ -68,10 +68,10 @@ export default {
           const when = DateTime.fromISO(v.fields.when);
           v.fields.day = when.startOf('day').toFormat('D')
           v.fields.dayName = when.startOf('day').toFormat('cccc')
-          v.fields.fromTime = when.toFormat('t').replace(':00', '')
-          v.fields.toTime = v.fields.length ?
-            when.plus(Duration.fromObject({minutes: v.fields.length})).toFormat('t').replace(':00', '') :
-            ''
+          v.fields.fromTime = when.toFormat('T')
+          v.fields.toTime = v.fields.length
+            ? when.plus(Duration.fromObject({minutes: v.fields.length})).toFormat('T')
+            : ''
           ;
           return v;
         }

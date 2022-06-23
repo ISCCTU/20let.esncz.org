@@ -33,16 +33,15 @@ export default {
 
 <style scoped>
 .nuxt-link-active {
-  @apply text-primary dark:text-secondary;
+  @apply text-primary;
 }
 
 .nuxt-link-active img {
   /* TODO: weird, cannot recognize it */
-  /* @apply dark:black-to-secondary;*/
+  /* @apply */
 }
 
 p:empty {
   display: none;
 }
 </style>
-

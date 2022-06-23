@@ -1,7 +1,7 @@
 <template>
   <section v-if="assets.length > 10">
     <a class="text-3xl md:text-4xl lg:text-5xl pb-8 lg:pb-10 text-white font-medium text-center block hover:underline"
-      href="https://www.instagram.com/explore/tags/nabrnodobry2022/" rel="noopener,noreferer,nofollow" target="_blank">
+      href="https://www.instagram.com/explore/tags/esncz20/" rel="noopener,noreferer,nofollow" target="_blank">
       <h3 class="text-primary">
         #ESNCZ20
       </h3>

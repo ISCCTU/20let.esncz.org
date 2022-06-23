@@ -4,11 +4,11 @@
       <div
         v-if="showCountdown"
         class="
-          text-center text-2xl text-primary dark:text-white
+          text-center text-2xl text-primary
           font-bold my-10 sm:my-20
         "
       >
-        Brno gonna be dobrý in <br>
+        The celebrations start in <br>
         <Countdown
           :end-time="countdownTo"
           class=""
@@ -25,7 +25,7 @@
         v-if="currentEvent"
         :to="{name:'event-id', params: {id: currentEvent.sys.id}}"
         class="
-        text-center text-2xl sm:text-4xl text-primary dark:text-white
+        text-center text-2xl sm:text-4xl text-primary
         font-bold my-10 sm:my-20 block hover:underline
       "
       >
@@ -36,7 +36,7 @@
         v-if="nextEvent"
         :to="{name:'event-id', params: {id: nextEvent.sys.id}}"
         class="
-        text-center text-lg dark:text-white
+        text-center text-lg
         font-bold my-10 sm:my-20 block hover:underline
       "
       >
@@ -85,5 +85,3 @@ export default {
   },
 }
 </script>
-
-

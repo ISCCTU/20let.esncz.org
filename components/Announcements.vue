@@ -2,7 +2,7 @@
   <div v-if="announcements.length">
     <div class="flex flex-row items-center my-6">
       <div class="flex-grow h-1 bg-secondary rounded-full"></div>
-      <h2 class="text-xl md:text-3xl font-bold text-primary dark:text-white mx-4">Announcements</h2>
+      <h2 class="text-xl md:text-3xl font-bold text-primary  mx-4">Announcements</h2>
       <div class="flex-grow h-1 bg-secondary rounded-full"></div>
     </div>
     <div class="
@@ -13,7 +13,7 @@
         class="
           mb-2 flex flex-col justify-between bg-gray-100 rounded
           break-inside-avoid-column
-          dark:bg-gray-800 group
+         group
         "
       >
         <div
@@ -21,7 +21,7 @@
           v-html="$md.render(a.fields.content)"
           :class="{'group-hover:blur-sm max-h-40': a.fields.link}"
           class="
-            prose prose-sm md:prose-base dark:prose-invert overflow-hidden relative
+            prose prose-sm md:prose-base overflow-hidden relative
             p-2
             transition-all
           "
@@ -39,7 +39,7 @@
         <div class="flex flex-row justify-between items-center text-gray-600 py-2 px-2">
           <a class="
             flex flex-row items-center gap-x-1
-            hover:underline text-primary dark:text-white text-sm group-hover:text-secondary
+            hover:underline text-primary text-sm group-hover:text-secondary
           "
              :class="{'invisible': !a.fields.link}" :href="a.fields.link">
             <svg class="h-3 w-3" viewBox="0 0 194.818 194.818" xml:space="preserve"
@@ -83,4 +83,3 @@ export default {
   }
 }
 </script>
-

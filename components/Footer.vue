@@ -1,17 +1,17 @@
 <template>
-  <footer class="bg-primary text-gray-200 min-h-36 flex items-center p-8">
+  <footer class="bg-primary min-h-36 flex items-center p-8">
     <div class="
         max-w-4xl mx-auto w-full flex flex-col md:flex-row
         justify-between items-center gap-4
       ">
-      <ul class="flex flex-col gap-1">
+      <ul class="flex flex-col gap-1 bg-white p-2">
         <li>
           <a
             class="flex flex-row gap-2 items-center hover:underline"
-            href="https://t.me/thejoeejoee"
+            href="mailto:filip.marek@isc.cvut.cz"
             target="_blank"
           >
-            <svg class="fill-white"
+            <svg class="fill-primary"
                  height="24" viewBox="0 0 512 512" width="24"
                  xmlns="http://www.w3.org/2000/svg"
             >
@@ -27,7 +27,7 @@
           </a>
         </li>
         <li class="flex flex-row gap-2 items-center">
-          <svg class="fill-white"
+          <svg class="fill-primary"
                height="24" viewBox="0 0 512 512" width="24"
                xmlns="http://www.w3.org/2000/svg"
           >
@@ -38,15 +38,15 @@
             <polygon
               points="255.893,256 255.893,165.199 206.365,165.199 206.365,305.528 346.693,305.528 346.693,256 		"/>
           </svg>
-          <span class="text-gray-200 text-sm font-mono">{{ time.toLocaleString() }}</span>
+          <span class="text-sm font-mono">{{ time.toLocaleString() }}</span>
         </li>
         <li>
           <a
             class="flex flex-row gap-2 items-center hover:underline"
-            href="https://github.com/esnvutbrno/nabrnodobry.cz"
+            href="https://github.com/ISCCTU/20let.esncz.org"
             target="_blank"
           >
-            <svg class="inline-block fill-white"
+            <svg class="inline-block fill-primary"
                  height="24" viewBox="0 0 24 24" width="24"
                  xmlns="http://www.w3.org/2000/svg"
             >
@@ -59,19 +59,14 @@
           </a>
         </li>
       </ul>
-
-      <div class="flex flex-row space-x-2">
-        <ColorModeSwitcher/>
-        <ThemeSwitcher/>
-      </div>
-      <span class="">
+      <span class="p-2 bg-white">
          © 2022
       </span>
       <img
-        src="@/assets/svg/esn-bu-logo-white.svg"
+        src="@/assets/svg/ISC_logo_color_horizontal.svg"
         height="80" loading="lazy" width="144"
-        alt="ESN Brno United"
-        class="w-1/3 md:w-1/4 lg:w-1/5"
+        alt="ISC CTU in Prague"
+        class="w-1/3 md:w-1/4 lg:w-1/5 bg-white"
       >
 
     </div>

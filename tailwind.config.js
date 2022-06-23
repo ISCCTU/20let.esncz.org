@@ -5,7 +5,7 @@ module.exports = {
 
       colors: {
         primary: 'rgb(var(--color-primary))',
-        secondary: '#f90093',
+        secondary: 'rgb(var(--color-accent))',
       },
       transitionProperty: {
         'max-w': 'max-width'

@@ -21,7 +21,7 @@
 </template>
 
 <script>
-const themes = 'default vut muni mendelu rainbow'.split(' ');
+const themes = 'default cvut vse rainbow'.split(' ');
 export default {
   name: "ThemeSwitcher",
   data: () => ({

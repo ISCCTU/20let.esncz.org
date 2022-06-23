@@ -1,7 +1,7 @@
 <template>
   <article class="space-y-4 lg:space-y-8">
     <h1 class="
-      text-4xl text-center font-bold text-primary dark:text-white
+      text-4xl text-center font-bold text-primary
       pt-4
     ">
       Important Contacts
@@ -20,13 +20,13 @@
             transition-transform duration-300 ease-in-out hover:scale-110
           "
         />
-        <h2 class="sm:text-lg text-primary dark:text-white text-center my-1">{{ head.fields.name }}</h2>
-        <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ head.fields.position }}</h3>
+        <h2 class="sm:text-lg text-primary  text-center my-1">{{ head.fields.name }}</h2>
+        <h3 class="text-xs text-gray-600  text-center">{{ head.fields.position }}</h3>
         <a
           v-if="head.fields.isImportant"
           :href="`tel:${head.fields.phone}`"
           class="
-              text-gray-600 hover:text-gray-800 dark:text-gray-400 text-center
+              text-gray-600 hover:text-gray-800  text-center
               flex flex-row gap-x-1.5 items-center group pt-1
             "
         >
@@ -44,38 +44,39 @@
     </ul>
 
     <a
-      class="text-3xl py-4 font-bold text-primary dark:text-white flex justify-center hover:underline"
-      href="mailto:oc_na@esncz.org">
-      oc_na@esncz.org
+      class="text-3xl py-4 font-bold text-primary  flex justify-center hover:underline"
+      href="mailto:oc_esncz20@esncz.org">
+      oc_esncz20@esncz.org
     </a>
 
     <div class="border-secondary border-b-4 my-4"></div>
 
-    <img
-      alt="ESN Brno United"
-      class="w-4/5 sm:w-1/3 mx-auto dark:black-to-white" height="80" loading="lazy"
-      src="@/assets/svg/esn-bu-logo-black.svg"
-      width="144"
-    >
+    <div class="flex flex-col sm:flex-row max-w-2xl mx-auto justify-between">
+      <img
+        alt="ISC CTU in Prague"
+        class="w-4/5 sm:w-1/3 mx-auto" height="80" loading="lazy"
+        src="@/assets/svg/ISC_logo_color_horizontal.svg"
+        width="144"
+      >
+      <img
+        alt="ESN VSE Prague"
+        class="w-4/5 sm:w-1/3 mx-auto" height="80" loading="lazy"
+        src="@/assets/svg/CZ-vse_prague-logo-colour.svg"
+        width="144"
+      >
+    </div>
 
     <ul class="
       flex flex-col sm:flex-row max-w-2xl mx-auto justify-between
       text-xl
     ">
-      <li class="flex flex-col items-center gap-y-1">
-        🟥
-        <strong>ESN VUT Brno</strong>
-        <a class="hover:underline" href="https://esnvutbrno.cz">esnvutbrno.cz</a>
+      <li class="flex flex-col items-center gap-y-1 mx-auto">
+        <strong>ISC CTU in Prague</strong>
+        <a class="hover:underline" href="https://isc.cvut.cz">isc.cvut.cz</a>
       </li>
-      <li class="flex flex-col items-center gap-y-1">
-        🟦
-        <strong>ESN MUNI Brno</strong>
-        <a class="hover:underline" href="https://esn.muni.cz/">esn.muni.cz</a>
-      </li>
-      <li class="flex flex-col items-center gap-y-1">
-        🟩
-        <strong>ESN MENDELU Brno</strong>
-        <a class="hover:underline" href="http://esnmendelu.cz/">esnmendelu.cz</a>
+      <li class="flex flex-col items-center gap-y-1 mx-auto">
+        <strong>ESN VSE Prague</strong>
+        <a class="hover:underline" href="https://esnvseprague.cz">esnvseprague.cz</a>
       </li>
     </ul>
 

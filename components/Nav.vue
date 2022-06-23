@@ -10,14 +10,7 @@
         <nuxt-link :to="{name: 'schedule'}">Schedule</nuxt-link>
       </li>
       <li>
-        <nuxt-link :to="{name: 'about'}">About NA</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link class="tracking-tighter whitespace-nowrap"
-                   :to="{name: 'faq-category', params: {category: 'general'}}"
-                   :class="{'nuxt-link-active': $route.name && $route.name.startsWith('faq-')}"
-        >Q & A
-        </nuxt-link>
+        <nuxt-link :to="{name: 'map'}">Map</nuxt-link>
       </li>
       <li>
         <nuxt-link :to="{name: 'links'}" class="">Links</nuxt-link>
@@ -33,25 +26,29 @@
       :class="{'hidden md:block md:invisible': $route.path === '/'}"
     >
       <svg
-        class="w-10 sm:w-12 fill-primary dark:fill-white group-hover:fill-secondary"
+        class="w-10 sm:w-12 fill-primary  group-hover:fill-secondary"
         viewBox="0 0 82.225755 72.054314"
       >
         <use :xlink:href="require('@/assets/svg/cb.svg') + '#main'"/>
       </svg>
-      <div class="md:hidden mt-2 sm:mt-0 sm:ml-2 sm:text-lg text-center sm:text-left text-primary dark:text-white">
-        NA Brno <br>dobrý
+      <div class="md:hidden mt-2 sm:mt-0 sm:ml-2 sm:text-lg text-center sm:text-left text-primary">
+        #ESNCZ20
       </div>
     </nuxt-link>
     <ul>
       <li>
-        <nuxt-link :to="{name: 'map'}">Map</nuxt-link>
-      </li>
-      <li>
         <nuxt-link :to="{name: 'team'}">Team</nuxt-link>
       </li>
       <li>
-        <nuxt-link :to="{name: 'game'}">Game</nuxt-link>
+        <nuxt-link :to="{name: 'about'}">About #ESNCZ20</nuxt-link>
       </li>
+      <!-- <li>
+        <nuxt-link class="tracking-tighter whitespace-nowrap"
+                   :to="{name: 'faq-category', params: {category: 'general'}}"
+                   :class="{'nuxt-link-active': $route.name && $route.name.startsWith('faq-')}"
+        >Q & A
+        </nuxt-link>
+      </li> -->
       <li>
         <nuxt-link :to="{name: 'contact'}">Contact</nuxt-link>
       </li>
@@ -89,7 +86,6 @@ nav ul li {
 nav ul li a {
   @apply
   p-1 sm:p-2 md:py-8 hover:bg-gray-50
-  dark:hover:bg-transparent dark:hover:text-secondary
   whitespace-nowrap
   inline-block w-full
   text-right sm:text-center

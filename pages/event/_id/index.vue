@@ -8,7 +8,7 @@
       < back to schedule
     </button>
 
-    <h1 class="py-4 mb-4 border-b-4 border-secondary text-primary dark:text-white
+    <h1 class="py-4 mb-4 border-b-4 border-secondary text-primary
         font-bold flex flex-col sm:flex-row justify-between items-center">
       <span class="text-4xl">{{ event.fields.title }}</span>
       <span class="text-3xl">
@@ -18,7 +18,7 @@
     </h1>
 
     <div class="flex flex-col-reverse md:flex-row justify-between gap-x-4">
-      <div class="w-auto md:w-2/3 prose prose-p:text-justify dark:prose-invert">
+      <div class="w-auto md:w-2/3 prose prose-p:text-justify"
         <YoutubeVideo
           v-if="event.fields.youtube"
           :id="event.fields.youtube"
@@ -44,9 +44,9 @@
         <nuxt-link
           v-if="place && place.fields.title"
           :to="{name: 'map', hash: '#' + place.sys.id}"
-          class="my-4 gap-2 flex flex-row items-center justify-center p-2 rounded border border-primary dark:border-white"
+          class="my-4 gap-2 flex flex-row items-center justify-center p-2 rounded border border-primary"
         >
-          <img alt="This place" class="h-8 w-8 dark:black-to-white" src="../../../assets/svg/place.svg">
+          <img alt="This place" class="h-8 w-8" src="../../../assets/svg/place.svg">
           <span
             class="text-lg font-bold"
           >

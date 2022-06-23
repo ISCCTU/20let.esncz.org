@@ -2,7 +2,7 @@
   <article>
     <nav>
       <ul class="
-        font-medium text-gray-800 dark:text-gray-100 text-lg
+        font-medium text-gray-800  text-lg
         flex flex-wrap flex-row justify-around md:justify-center items-center
       ">
         <li v-for="g in categories"
@@ -13,7 +13,7 @@
           <nuxt-link
             :to="{name: 'faq-category', params: {category: g.slug}}"
             class="
-              inline-block p-1 md:p-4 hover:text-primary dark:hover:text-secondary
+              inline-block p-1 md:p-4 hover:text-primary
 
               relative
               after:absolute
@@ -30,7 +30,7 @@
     <div class="max-w-2xl mx-auto py-4 md:py-8">
       <div v-for="q in currentQuestions" class="group">
         <nuxt-link
-          :class="{'text-primary dark:text-secondary': question === q.sys.id}"
+          :class="{'text-primary ': question === q.sys.id}"
           :to="{
             name: question === q.sys.id ? 'faq-category' : 'faq-category-question',
             params: {
@@ -43,7 +43,6 @@
             flex flex-row items-center justify-between
 
             group-odd:bg-gray-100 group-odd:hover:bg-gray-200 group-hover:bg-gray-100
-            dark:group-odd:bg-gray-800 dark:group-hover:bg-gray-800 dark:group-odd:hover:bg-gray-700
           "
           href="#"
         >
@@ -56,14 +55,14 @@
           <img
             alt="Question"
             aria-hidden="true"
-            class="h-6 w-6 black-to-primary dark:black-to-white" src="../assets/svg/question-mark.svg"
-            :class="{'dark:black-to-secondary black-to-secondary': question === q.sys.id}"
+            class="h-6 w-6 black-to-primary  src="../assets/svg/question-mark.svg"
+            :class="{' black-to-secondary': question === q.sys.id}"
           >
         </nuxt-link>
         <div
           v-show="question === q.sys.id"
-          class="p-4 bg-gray-50 dark:bg-gray-800
-            prose dark:prose-invert mx-auto prose-img:my-2
+          class="p-4 bg-gray-50
+            prose  mx-auto prose-img:my-2
             w-5/6"
         >
           <RichTextRenderer
