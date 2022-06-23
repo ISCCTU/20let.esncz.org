@@ -38,7 +38,7 @@
             <polygon
               points="255.893,256 255.893,165.199 206.365,165.199 206.365,305.528 346.693,305.528 346.693,256 		"/>
           </svg>
-          <span class="text-sm font-mono">{{ time.toLocaleString() }}</span>
+          <span class="text-sm font-mono">{{ time.toFormat('yyyy-LL-dd HH:mm:ss') }}</span>
         </li>
         <li>
           <a
@@ -74,9 +74,11 @@
 </template>
 
 <script>
+import {DateTime} from "@/utils/date";
+
 export default {
   name: "Footer",
-  data: () => ({time: new Date()}),
+  data: () => ({time: DateTime.now().setZone('Europe/Prague')}),
   fetch() {
     // this.time = new Date();
   }
