@@ -34,9 +34,8 @@
         >
           <svg
             class="
-              w-4 h-4 bg-primary text-white p-[0.15rem] rounded-full
+              w-4 h-4 bg-dark text-white p-[0.15rem] rounded-full
               group-hover:bg-secondary
-                :text-secondary :bg-white
             "
             viewBox="0 0 53.942 53.942" xml:space="preserve"
             xmlns="http://www.w3.org/2000/svg">
@@ -86,9 +85,8 @@
           >
             <svg
               class="
-                w-4 h-4 bg-primary text-white p-[0.15rem] rounded-full
+                w-4 h-4 bg-dark text-white p-[0.15rem] rounded-full
                 group-hover:bg-secondary
-                  :text-secondary :bg-white
               "
               viewBox="0 0 53.942 53.942" xml:space="preserve"
               xmlns="http://www.w3.org/2000/svg">
