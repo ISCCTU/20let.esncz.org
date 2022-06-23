@@ -1,7 +1,7 @@
 <template>
   <article>
     <h1 class="
-      text-3xl text-center font-bold text-primary dark:text-white pb-4
+      text-3xl text-center font-bold text-primary  pb-4
     ">
       Links
     </h1>
@@ -55,7 +55,7 @@ nav a[data-light] {
 }
 
 nav a[data-accent] {
-  @apply border-secondary hover:bg-gray-50 dark:hover:bg-gray-800;
+  @apply border-secondary hover:bg-gray-50;
 }
 
 nav a[data-dark] {

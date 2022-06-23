@@ -3,10 +3,10 @@
     <span class="font-bold text-4xl md:text-8xl text-secondary">
       😞
     </span>
-    <h1 class="font-esn text-primary dark:text-white font-bold font-4xl md:text-5xl text-center">
+    <h1 class="font-esn text-primary  font-bold font-4xl md:text-5xl text-center">
       {{ error.message }}
     </h1>
-    <span class="font-mono text-xs text-gray-500 dark:text-gray-200">
+    <span class="font-mono text-xs text-gray-500">
         {{ $route.fullPath }}
     </span>
     <NuxtLink
@@ -21,8 +21,8 @@
     <span class="text-lg text-gray-500">
       P.S. If you think this page should exist, please
       <a
-        class="underline hover:text-gray-700 dark:hover:text-gray-300"
-        href="https://t.me/thejoeejoee"
+        class="underline hover:text-gray-700"
+        href="mailto:filip.marek@isc.cvut.cz"
         target="_blank"
       >contact us</a>.
     </span>
@@ -42,4 +42,3 @@ export default {
   }
 }
 </script>
-

@@ -6,19 +6,21 @@ export default {
   target: 'static',
 
   head: {
-    title: 'NA Brno dobrý 2022',
-    titleTemplate: '%s · NA Brno dobrý 2022',
+    titleTemplate: (titleChunk) => {
+      // If undefined or blank then we don't need the hyphen
+      return titleChunk ? `${titleChunk} – #ESNCZ20 | ESN Czech Republic` : 'ESN Czech Republic';
+    },
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-      {name: 'description', content: 'Folklore themed National Assembly of ESN CZ happening in Brno in May 2022'},
-      {name: 'author', content: 'ESN Brno United'},
+      {name: 'description', content: 'Celebrations of 20 years of ESN in the Czech Republic'},
+      {name: 'author', content: 'ESN Brno United & ISC CTU in Prague'},
       {
         name: 'keywords',
-        content: 'folklore, national assembly, erasmus, erasmus student network, czech republic, esn vut brno, esn mendelu, esn muni, na may 2022'
+        content: '20, 20 years, erasmus, erasmus student network, czech republic, isc ctu in prague, esn vse prague, #esncz20'
       },
       {name: 'format-detection', content: 'telephone=no,date=no,email=no'},
       {name: 'google-site-verification', content: '5J3DG_xFC40IwbDml8YEsQtdSZpKc-FMtJ4CXGmv_nA'},
@@ -79,18 +81,18 @@ export default {
   pwa: {
     meta: {
       theme_color: '#2e3192',
-      name: 'NA Brno dobrý 2022',
-      author: 'ESN Brno United',
+      name: '#ESNCZ20',
+      author: 'ESN Brno United & ISC CTU in Prague',
       ogHost: process.env.FULL_BASE_URL || 'http://localhost:3000/',
       ogImage: {
-        path: 'og-image.jpg',
-        width: 2048,
-        height: 1074,
+        path: 'og-image.png',
+        width: 1921,
+        height: 1080,
       }
     },
     manifest: {
-      name: 'NA Brno dobrý 2022',
-      short_name: 'NA Brno 2022',
+      name: '#ESNCZ20',
+      short_name: '#ESNCZ20',
       display: 'standalone',
     },
     icon: {

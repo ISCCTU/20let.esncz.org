@@ -156,8 +156,8 @@ export const mutations = {
       e.fields.end = e.fields.length ?
         when.plus(Duration.fromObject({minutes: e.fields.length})) : undefined;
 
-      e.fields.from = when.toFormat('t').replace(':00', '')
-      e.fields.till = e.fields.end ? e.fields.end.toFormat('t').replace(':00', '') : '';
+      e.fields.from = when.toFormat('T')
+      e.fields.till = e.fields.end ? e.fields.end.toFormat('T') : '';
 
       e.fields.day = when.startOf('day').toFormat('D')
       e.fields.dayName = when.startOf('day').toFormat('cccc')

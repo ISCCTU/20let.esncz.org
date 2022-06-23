@@ -1,23 +1,15 @@
 <template>
-  <section v-if="assets.length > 10" class="bg-primary">
-    <a
-      class="text-3xl md:text-4xl lg:text-5xl py-8 lg:py-10 text-white font-medium text-center block hover:underline"
-      href="https://www.instagram.com/explore/tags/nabrnodobry2022/"
-      rel="noopener,noreferer,nofollow"
-      target="_blank"
-    >
-      <h3>
-        #nabrnodobry2022
+  <section v-if="assets.length > 10">
+    <a class="text-3xl md:text-4xl lg:text-5xl pb-8 lg:pb-10 text-white font-medium text-center block hover:underline"
+      href="https://www.instagram.com/explore/tags/esncz20/" rel="noopener,noreferer,nofollow" target="_blank">
+      <h3 class="text-primary">
+        #ESNCZ20
       </h3>
     </a>
     <div class="columns-[6rem] sm:columns-[10rem] md:columns-2xs gap-4 px-4 sm:px-8">
       <template v-for="a in assets">
-        <img
-          class="mb-4" loading="lazy"
-          :src="a.fields.file.url + '?w=480'" alt=""
-          :width="a.fields.file.details.image.width"
-          :height="a.fields.file.details.image.height"
-        >
+        <img class="mb-4" loading="lazy" :src="a.fields.file.url + '?w=480'" alt=""
+          :width="a.fields.file.details.image.width" :height="a.fields.file.details.image.height">
       </template>
     </div>
 
@@ -25,7 +17,7 @@
 </template>
 
 <script>
-import {createClient} from "@/plugins/contentful";
+import { createClient } from "@/plugins/contentful";
 import _ from 'lodash';
 
 export default {
@@ -46,5 +38,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

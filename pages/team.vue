@@ -22,13 +22,13 @@
             '--max-offset-right': `${50 + 200 * Math.random()}%`,
           }"
         />
-        <h2 class="sm:text-lg text-primary dark:text-white text-center my-1">{{ head.fields.name }}</h2>
-        <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ head.fields.position }}</h3>
+        <h2 class="sm:text-lg text-primary  text-center my-1">{{ head.fields.name }}</h2>
+        <h3 class="text-xs text-gray-600  text-center">{{ head.fields.position }}</h3>
         <a
           v-if="head.fields.isImportant"
           :href="`tel:${head.fields.phone}`"
           class="
-              text-sm text-gray-600 hover:text-gray-800 dark:text-gray-400 text-center
+              text-sm text-gray-600 hover:text-gray-800  text-center
               flex flex-row gap-x-1.5 items-center group pt-1
             "
         >
@@ -36,7 +36,7 @@
             class="
               w-4 h-4 bg-primary text-white p-[0.15rem] rounded-full
               group-hover:bg-secondary
-              dark:text-primary dark:bg-white dark:group-hover:text-secondary dark:group-hover:bg-white
+                :text-secondary :bg-white
             "
             viewBox="0 0 53.942 53.942" xml:space="preserve"
             xmlns="http://www.w3.org/2000/svg">
@@ -74,13 +74,13 @@
               '--max-offset-right': `${50 + 150 * Math.random()}%`,
             }"
           />
-          <h2 class="text-primary dark:text-white text-center my-1">{{ member.fields.name }}</h2>
-          <h3 class="text-xs text-gray-600 dark:text-gray-400 text-center">{{ member.fields.position }}</h3>
+          <h2 class="text-primary  text-center my-1">{{ member.fields.name }}</h2>
+          <h3 class="text-xs text-gray-600  text-center">{{ member.fields.position }}</h3>
           <a
             v-if="member.fields.isImportant"
             :href="`tel:${member.fields.phone}`"
             class="
-              text-xs text-gray-600 hover:text-gray-800 dark:text-gray-400 text-center
+              text-xs text-gray-600 hover:text-gray-800  text-center
               flex flex-row gap-x-1 items-center group pt-1
             "
           >
@@ -88,7 +88,7 @@
               class="
                 w-4 h-4 bg-primary text-white p-[0.15rem] rounded-full
                 group-hover:bg-secondary
-                dark:text-primary dark:bg-white dark:group-hover:text-secondary dark:group-hover:bg-white
+                  :text-secondary :bg-white
               "
               viewBox="0 0 53.942 53.942" xml:space="preserve"
               xmlns="http://www.w3.org/2000/svg">
@@ -106,7 +106,7 @@
       <button
         class="text-right text-gray-500 text-sm hover:underline"
         @click="workingHard = !workingHard"
-      >psssst, wanna see how hard we're working on this NA?
+      >psssst, wanna see how hard we're working on these celebtations?
       </button>
     </p>
   </div>

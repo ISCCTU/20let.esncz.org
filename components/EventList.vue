@@ -23,13 +23,13 @@
       >
         <span
           :class="{
-            'text-white dark:text-white': e.fields.state === 'current',
-            'text-gray-500 dark:text-gray-500': e.fields.state === 'finished',
+            'text-white ': e.fields.state === 'current',
+            'text-gray-500 ': e.fields.state === 'finished',
             'lg:text-lg': !nested
           }"
           class="
             flex-grow sm:flex-grow-0 self-start sm:self-center
-            text-primary font-bold dark:text-white
+            text-primary font-bold
           "
         >
           {{ e.fields.title }}
@@ -46,7 +46,7 @@
         <!-- :href="`https://www.youtube.com/watch?v=${e.fields.youtube}`"-->
         <span
           v-if="e.fields.youtube"
-          class="hover:black-to-secondary dark:black-to-white mr-2"
+          class="hover:black-to-secondary  mr-2"
         >
           <img
             alt="Youtube link"
@@ -65,7 +65,7 @@
                 'black-to-white': e.fields.state === 'current',
               }"
               alt="Place"
-              class="w-4 w-4 dark:black-to-white"
+              class="w-4 w-4"
               src="~/assets/svg/place.svg"
             >
             {{ e.fields.place.fields.title }}
@@ -80,7 +80,7 @@
                 'black-to-white': e.fields.state === 'current',
               }"
             alt="Time"
-            class="w-3 w-3 dark:black-to-white"
+            class="w-3 w-3"
             src="~/assets/svg/time.svg"
           >
           {{ e.fields.from }}
@@ -118,7 +118,6 @@ export default {
 .state-upcoming:not(.has-children),
 .state-finished:not(.has-children) {
   @apply odd:bg-gray-100 odd:hover:bg-gray-200 hover:bg-gray-100
-  dark:odd:bg-gray-800 dark:hover:bg-gray-800 dark:odd:hover:bg-gray-700
 }
 
 </style>

@@ -43,11 +43,10 @@ export default {
 
 <style scoped>
 .nuxt-link-active {
-  @apply text-primary dark:text-secondary;
+  @apply text-primary;
 }
 
 p:empty {
   display: none;
 }
 </style>
-

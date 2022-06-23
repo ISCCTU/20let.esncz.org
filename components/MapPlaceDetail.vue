@@ -7,7 +7,7 @@
     flex flex-col justify-between
   ">
     <h2 class="
-      p-5 rounded-t bg-primary
+      p-5 rounded-t bg-dark
       text-lg font-esn font-bold
       flex flex-row justify-between items-center
     ">
@@ -22,12 +22,12 @@
       :alt="place.fields.title" loading="lazy"
       class="md:max-w-[35vw]"
     >
-    <div class="p-5 rounded-b bg-primary text-center">
+    <div class="p-5 rounded-b bg-dark text-center">
       <a
         class="border border-white py-2 px-2 rounded uppercase font-bold inline-block"
         :href="directionsUrl"
       >
-        directions there
+        Directions there
       </a>
     </div>
   </div>
