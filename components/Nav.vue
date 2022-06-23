@@ -5,7 +5,7 @@
       font-bold text-sm md:text-lg uppercase text-primary font-esn
       z-[1111] select-none
     ">
-    <ul>
+    <ul class="pr-2">
       <li>
         <nuxt-link :to="{name: 'schedule'}">Schedule</nuxt-link>
       </li>
@@ -20,7 +20,7 @@
       class="
         flex flex-col sm:flex-row justify-center items-center
         my-2 sm:mx-2 md:mx-4 md:my-0
-        px-4 group
+        px-2 group
       "
       :to="{name: 'index'}"
       :class="{'hidden md:block md:invisible': $route.path === '/'}"
@@ -35,7 +35,7 @@
         #ESNCZ20
       </div>
     </nuxt-link>
-    <ul>
+    <ul class="pl-2">
       <li>
         <nuxt-link :to="{name: 'team'}">Team</nuxt-link>
       </li>
