@@ -53,7 +53,7 @@ export default {
         require('../assets/partners/logo_cvut_en.svg'),
         require('../assets/partners/VSE_logo_EN_horizontal_blue.svg'),
 
-        require('../assets/partners/dzs.svg'),
+        require('../assets/partners/DZS_logo_sirka_RGB-1.svg'),
         require('../assets/partners/eurosender.svg'),
         require('../assets/partners/BOMBUS_HNEDE-1024x399.png'),
       ]
