@@ -83,5 +83,10 @@ export default {
       return DateTime.fromISO(this.now) < this.countdownTo
     },
   },
+  head() {
+    return {
+      title: null
+    };
+  },
 }
 </script>

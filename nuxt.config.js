@@ -6,9 +6,10 @@ export default {
   target: 'static',
 
   head: {
-    titleTemplate: (titleChunk) => {
+    titleTemplate: (pageTitle) => {
+      const siteTitle = '#ESNCZ20 | ESN Czech Republic';
       // If undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} – #ESNCZ20 | ESN Czech Republic` : 'ESN Czech Republic';
+      return pageTitle ? `${pageTitle} – ${siteTitle}` : `${siteTitle}`;
     },
     htmlAttrs: {
       lang: 'en'
