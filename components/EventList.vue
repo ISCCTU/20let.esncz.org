@@ -9,7 +9,7 @@
     <li
       v-for="e in events"
       :class="{
-        'bg-primary text-white': e.fields.state === 'current',
+        'text-secondary': e.fields.state === 'current',
         [`state-${e.fields.state}`]: true,
         'has-children': e.fields.events,
         'cursor-pointer': !e.fields.events,
@@ -23,7 +23,7 @@
       >
         <span
           :class="{
-            'text-white ': e.fields.state === 'current',
+            'text-secondary ': e.fields.state === 'current',
             'text-gray-500 ': e.fields.state === 'finished',
             'lg:text-lg': !nested
           }"
@@ -84,7 +84,11 @@
             src="~/assets/svg/time.svg"
           >
           {{ e.fields.from }}
-          <span v-if="e.fields.till" class="text-sm text-gray-500">– {{ e.fields.till }}</span>
+          <span
+            v-if="e.fields.till"
+            class="text-sm text-gray-500"
+            :class="{'text-secondary': e.fields.state === 'current',}"
+          >– {{ e.fields.till }}</span>
         </time>
       </div>
       <div v-if="e.fields.events" class="px-4 my-4 text-sm">

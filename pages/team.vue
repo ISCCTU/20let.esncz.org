@@ -104,7 +104,7 @@
       <button
         class="text-right text-gray-500 text-sm hover:underline"
         @click="workingHard = !workingHard"
-      >psssst, wanna see how hard we're working on these celebtations?
+      >psssst, wanna see how hard we're working on these celebrations?
       </button>
     </p>
   </div>
