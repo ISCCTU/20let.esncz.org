@@ -55,7 +55,7 @@
           <img
             alt="Question"
             aria-hidden="true"
-            class="h-6 w-6 black-to-primary  src="../assets/svg/question-mark.svg"
+            class="h-6 w-6 black-to-primary" src="../assets/svg/question-mark.svg"
             :class="{' black-to-secondary': question === q.sys.id}"
           >
         </nuxt-link>

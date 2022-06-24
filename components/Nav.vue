@@ -15,6 +15,13 @@
       <li>
         <nuxt-link :to="{name: 'links'}" class="">Links</nuxt-link>
       </li>
+      <li>
+        <nuxt-link class="tracking-tighter whitespace-nowrap"
+                   :to="{name: 'faq-category', params: {category: 'general'}}"
+                   :class="{'nuxt-link-active': $route.name && $route.name.startsWith('faq-')}"
+        >FAQ
+        </nuxt-link>
+      </li>
     </ul>
     <nuxt-link
       class="
@@ -42,13 +49,6 @@
       <li>
         <nuxt-link :to="{name: 'about'}">About #ESNCZ20</nuxt-link>
       </li>
-      <!-- <li>
-        <nuxt-link class="tracking-tighter whitespace-nowrap"
-                   :to="{name: 'faq-category', params: {category: 'general'}}"
-                   :class="{'nuxt-link-active': $route.name && $route.name.startsWith('faq-')}"
-        >Q & A
-        </nuxt-link>
-      </li> -->
       <li>
         <nuxt-link :to="{name: 'contact'}">Contact</nuxt-link>
       </li>
